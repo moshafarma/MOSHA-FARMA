@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Apotek Mosha Farma</title>
+
+  <meta name="description" content="Apotek Mosha Farma - Praktek Dokter, Apoteker & Laboratorium">
+
+  <style>
+    :root {
+      --green: #38a817;
+      --blue: #0872c5;
+      --light-green: #65c52d;
+      --dark-blue: #174a91;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--white);
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark-blue);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+    }
+
+    /* LOGO */
+
+    .header {
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+      border-bottom: 3px solid var(--light-green);
+    }
+
+    .logo {
+      display: block;
+      width: 190px;
+      max-width: 65%;
+      height: auto;
+      margin: 0 auto 15px;
+      object-fit: contain;
+    }
+
+    .header-description {
+      color: var(--dark-blue);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      line-height: 1.7;
+    }
+
+    /* WELCOME */
+
+    .welcome {
+      margin-bottom: 30px;
+    }
+
+    .welcome h2 {
+      font-size: 25px;
+      color: var(--dark-blue);
+      margin-bottom: 12px;
+    }
+
+    .welcome p {
+      font-size: 13px;
+      color: #68778a;
+      line-height: 1.8;
+    }
+
+    /* MENU */
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .menu a {
+      display: block;
+      padding: 20px 15px;
+      border-radius: 12px;
+      color: var(--white);
+      text-decoration: none;
+      transition: 0.25s ease;
+      box-shadow: 0 4px 12px rgba(23,74,145,0.10);
+    }
+
+    .menu a:hover {
+      transform: translateY(-4px);
+      filter: brightness(1.06);
+      box-shadow: 0 7px 18px rgba(23,74,145,0.18);
+    }
+
+    .menu-title {
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+
+    .menu-description {
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    .whatsapp {
+      background: var(--green);
+    }
+
+    .maps {
+      background: var(--blue);
+    }
+
+    .tiktok {
+      background: var(--dark-blue);
+    }
+
+    /* FOOTER */
+
+    .footer {
+      margin-top: 35px;
+      padding-top: 18px;
+      border-top: 1px solid #e5eaf0;
+      color: var(--dark-blue);
+      font-size: 11px;
+      letter-spacing: 0.5px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 380px) {
+      .logo {
+        width: 165px;
+      }
+
+      .welcome h2 {
+        font-size: 22px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- LOGO APOTEK -->
+
+    <header class="header">
+
+      <img
+        src="mosha-farma-logo.png"
+        alt="Logo Apotek Mosha Farma"
+        class="logo"
+      >
+
+      <div class="header-description">
+        PRAKTEK DOKTER, APOTEKER & LABORATORIUM
+      </div>
+
+    </header>
+
+
+    <!-- WELCOME -->
+
+    <section class="welcome">
+
+      <h2>Selamat Datang</h2>
+
+      <p>
+        Selamat datang di
+        Apotek Mosha Farma.
+        <br>
+        Temukan informasi dan akses layanan
+        kami melalui tautan berikut. Klik salah satunya
+      </p>
+
+    </section>
+
+
+    <!-- MENU UTAMA -->
+
+    <section class="menu">
+
+      <a
+        class="whatsapp"
+        href="https://wa.me/6282320395161"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="menu-title">
+          WhatsApp Apotek
+        </div>
+
+        <div class="menu-description">
+          Hubungi kami untuk informasi dan pemesanan
+        </div>
+
+      </a>
+
+
+      <a
+        class="maps"
+        href="https://maps.app.goo.gl/w5KLbJLfA15wFQd38?g_st=ac"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="menu-title">
+          Google Maps
+        </div>
+
+        <div class="menu-description">
+          Temukan lokasi Apotek Mosha Farma
+        </div>
+
+      </a>
+
+
+      <a
+        class="tiktok"
+        href="https://www.tiktok.com/@moshafarma_pky?_r=1&_t=ZS-9B2L3cQ7gdI"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="menu-title">
+          TikTok Apotek
+        </div>
+
+        <div class="menu-description">
+          Kunjungi akun TikTok resmi kami
+        </div>
+
+      </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      @2026 belong to Mosha Farma
+    </footer>
+
+  </main>
+
+</body>
+</html>
