@@ -7,7 +7,7 @@
 
   <title>Apotek Mosha Farma</title>
 
-  <meta name="description" content="Apotek Mosha Farma - Praktek Dokter, Apoteker & Laboratorium">
+  <meta name="description" content="Website resmi Apotek Mosha Farma - Praktek Dokter, Apoteker & Laboratorium">
 
   <style>
     :root {
@@ -41,28 +41,35 @@
       text-align: center;
     }
 
-    /* LOGO */
+    /* HEADER */
 
     .header {
-      padding-bottom: 25px;
-      margin-bottom: 30px;
+      padding: 25px 10px 28px;
+      margin-bottom: 32px;
       border-bottom: 3px solid var(--light-green);
     }
 
-    .logo {
-      display: block;
-      width: 190px;
-      max-width: 65%;
-      height: auto;
-      margin: 0 auto 15px;
-      object-fit: contain;
+    .header-small {
+      font-size: 17px;
+      font-weight: bold;
+      color: var(--green);
+      letter-spacing: 5px;
+      margin-bottom: 8px;
+    }
+
+    .header h1 {
+      font-size: 38px;
+      font-weight: 800;
+      color: var(--dark-blue);
+      letter-spacing: 1px;
+      margin-bottom: 14px;
     }
 
     .header-description {
-      color: var(--dark-blue);
-      font-size: 12px;
+      font-size: 11px;
       font-weight: bold;
-      letter-spacing: 1px;
+      color: var(--blue);
+      letter-spacing: 1.5px;
       line-height: 1.7;
     }
 
@@ -94,7 +101,7 @@
 
     .menu a {
       display: block;
-      padding: 20px 15px;
+      padding: 21px 15px;
       border-radius: 12px;
       color: var(--white);
       text-decoration: none;
@@ -145,8 +152,16 @@
     /* RESPONSIVE */
 
     @media (max-width: 380px) {
-      .logo {
-        width: 165px;
+      .header h1 {
+        font-size: 30px;
+      }
+
+      .header-small {
+        font-size: 14px;
+      }
+
+      .header-description {
+        font-size: 9px;
       }
 
       .welcome h2 {
@@ -161,18 +176,20 @@
 
   <main class="container">
 
-    <!-- LOGO APOTEK -->
+    <!-- HEADER -->
 
     <header class="header">
 
-      <img
-        src="mosha-farma-logo.png"
-        alt="Logo Apotek Mosha Farma"
-        class="logo"
-      >
+      <div class="header-small">
+        APOTEK
+      </div>
+
+      <h1>MOSHA FARMA</h1>
 
       <div class="header-description">
-        PRAKTEK DOKTER, APOTEKER & LABORATORIUM
+        PRAKTEK DOKTER, APOTEKER
+        <br>
+        & LABORATORIUM
       </div>
 
     </header>
@@ -185,17 +202,17 @@
       <h2>Selamat Datang</h2>
 
       <p>
-        Selamat datang di
+        Selamat datang di website resmi
         Apotek Mosha Farma.
         <br>
         Temukan informasi dan akses layanan
-        kami melalui tautan berikut. Klik salah satunya
+        kami melalui tautan berikut.
       </p>
 
     </section>
 
 
-    <!-- MENU UTAMA -->
+    <!-- MENU -->
 
     <section class="menu">
 
@@ -205,7 +222,6 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-
         <div class="menu-title">
           WhatsApp Apotek
         </div>
@@ -213,7 +229,6 @@
         <div class="menu-description">
           Hubungi kami untuk informasi dan pemesanan
         </div>
-
       </a>
 
 
@@ -223,7 +238,6 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-
         <div class="menu-title">
           Google Maps
         </div>
@@ -231,7 +245,6 @@
         <div class="menu-description">
           Temukan lokasi Apotek Mosha Farma
         </div>
-
       </a>
 
 
@@ -241,7 +254,6 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-
         <div class="menu-title">
           TikTok Apotek
         </div>
@@ -249,7 +261,6 @@
         <div class="menu-description">
           Kunjungi akun TikTok resmi kami
         </div>
-
       </a>
 
     </section>
